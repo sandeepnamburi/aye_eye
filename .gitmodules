@@ -1,0 +1,3 @@
+[submodule "speech-to-text-websockets-python"]
+	path = speech-to-text-websockets-python
+	url = https://github.com/jagatfx/speech-to-text-websockets-python/
