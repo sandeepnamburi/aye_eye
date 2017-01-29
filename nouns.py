@@ -21,14 +21,18 @@ def has_three_consecutive_nouns(sentence):
     return False
 
 def is_noun(word):
-    response = unirest.get("https://wordsapiv1.p.mashape.com/words/" + word + "/definitions",
-        headers={
-            "X-Mashape-Key": "uVoKTP7XPZmshpbJj6L1L9Y4Q7oap1jn1mzjsnrTEsfvsqdO0I",
-            "Accept": "application/json"
-        }
-    )
+    try:
+        response = unirest.get("https://wordsapiv1.p.mashape.com/words/" + word + "/definitions",
+            headers={
+                "X-Mashape-Key": "uVoKTP7XPZmshpbJj6L1L9Y4Q7oap1jn1mzjsnrTEsfvsqdO0I",
+                "Accept": "application/json"
+            }
+        )
 
-    for defin in response.body["definitions"]:
-        if defin["partOfSpeech"] == "noun":
-            return True
-    return False
+        for defin in response.body["definitions"]:
+            if defin["partOfSpeech"] == "noun":
+                return True
+        return False
+
+    except Exception as e:
+        return False
