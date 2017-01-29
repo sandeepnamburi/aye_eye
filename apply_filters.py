@@ -18,4 +18,4 @@ def apply_filters(source):
     sentences = filter(lambda s: s.strip(), source.split("."))
     sentences = filter(is_good, sentences)
     for s in sentences:
-       print s
+       print "- " + s + "."
