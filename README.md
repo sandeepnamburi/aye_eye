@@ -1,1 +1,1 @@
-This contains the backend of our AI algorithm. All community hackers are welcome to fork our project and add to the algoritm. Contact me at <b>sxn162130@utdallas.edu</b> for any help downloading or compiling.
+This contains the backend of our AI algorithm. All community hackers are welcome to fork our project and add to the algorithm. Contact me at <b>sxn162130@utdallas.edu</b> for any help downloading or compiling.
